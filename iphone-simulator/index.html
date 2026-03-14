@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone界面模拟</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
+</head>
+<body>
+    <div class="iphone-container">
+        <!-- 状态栏 -->
+        <div class="status-bar"></div>
+
+        <!-- 主要内容区域 -->
+        <div class="content-area">
+            <!-- 顶部区域：头像和输入框 -->
+            <div class="top-section">
+                <div class="avatar-card">
+                    <div class="avatar-container">
+                        <div class="avatar-circle">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="avatar-circle second-avatar">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="text-input-container">
+                        <div class="text-input" contenteditable="true">我们永远不会败给时间</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中部区域 -->
+            <div class="middle-section">
+                <!-- 左侧区域 -->
+                <div class="left-middle">
+                    <div class="image-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="input-placeholder">
+                            <div class="small-input" contenteditable="true">输入文字...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右侧区域：图标网格 -->
+                <div class="right-middle">
+                    <div class="icon-grid">
+                        <div class="icon-item">
+                            <i class="fab fa-weixin"></i>
+                            <span class="icon-label">微信</span>
+                        </div>
+                        <div class="icon-item">
+                            <i class="fas fa-sticky-note"></i>
+                            <span class="icon-label">备忘录</span>
+                        </div>
+                        <div class="icon-item">
+                            <i class="fab fa-zhihu"></i>
+                            <span class="icon-label">知乎</span>
+                        </div>
+                        <div class="icon-item">
+                            <i class="fas fa-folder"></i>
+                            <span class="icon-label">文件夹</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 中下区域：聊天输入框 -->
+            <div class="bottom-middle">
+                <div class="chat-input left-chat">
+                    <div class="chat-bubble" contenteditable="true">以后...别再流眼泪了</div>
+                </div>
+                <div class="chat-input right-chat">
+                    <div class="chat-bubble" contenteditable="true">好 希望以后每滴眼泪都是通往幸福</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部Dock栏 -->
+        <div class="dock-bar">
+            <div class="dock-item">
+                <i class="fas fa-phone"></i>
+                <span class="dock-label">电话</span>
+            </div>
+            <div class="dock-item">
+                <i class="fas fa-cog"></i>
+                <span class="dock-label">设置</span>
+            </div>
+            <div class="dock-item">
+                <i class="fas fa-paint-brush"></i>
+                <span class="dock-label">美化</span>
+            </div>
+            <div class="dock-item">
+                <i class="fas fa-search"></i>
+                <span class="dock-label">查手机</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
